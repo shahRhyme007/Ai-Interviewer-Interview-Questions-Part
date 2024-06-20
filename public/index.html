@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with PDF 💬</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chat with PDF 💬</h1>
+        <input type="file" id="pdf-upload" accept="application/pdf">
+        <button onclick="uploadPDF()">Upload PDF</button>
+        <div id="pdf-name"></div>
+        <button onclick="generateQuestions()">Generate Interview Questions</button>
+        <div id="questions"></div>
+        <input type="text" id="query" placeholder="Ask questions about your PDF file">
+        <button onclick="askQuestion()">Ask</button>
+        <div id="answer"></div>
+    </div>
+    <script src="script.js"></script> <!-- Corrected this line -->
+</body>
+</html>
